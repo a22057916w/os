@@ -15,4 +15,9 @@
 
 5. What is the difference between a hardware interrupt and a software interrupt \
    A hardware interrupt is triggered by external hardware, like a mouse, keyboard... While a software interrupt is triggered by programs, like exceptions. 
-   
+
+## Chapter 2
+1. What is core dump and crash dump
+   A core dump is a binary file that captures a snapshot of the program's memory when it crashes. It includes program data, stack, and registers. \
+   A crash dump is a collection of files that record the status of the entire system when it experiences a system crash. It includes the info about the kernel, running programs,
+   system memory, and hardware status...
