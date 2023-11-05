@@ -2,9 +2,9 @@
 1. What is an Operating System \
    A program acts as an intermediary between the user and computer hardware, also a resource allocator to handle the resources that the user might use, such as memory, CPU time ...
 
-2. What are the two important things after an interrupt occurred \
-   1. Execute the Interrupt Service Routine(ISR) \
-   2. Save the return address of the swapped process \
+2. What are the two important things after an interrupt occurred 
+   1. Execute the Interrupt Service Routine(ISR) 
+   2. Save the return address of the swapped process 
 
 3. What's the difference between asymmetric and symmetric multiprocessing \
    In asymmetric multiprocessing, each processor has its own specific job, and there is one hot-standby **boss** processor to control the system, if a processor fails, the **boss** \
