@@ -7,7 +7,7 @@
    2. Save the return address of the swapped process 
 
 3. What's the difference between asymmetric and symmetric multiprocessing \
-   In asymmetric multiprocessing, each processor has its own specific job, and there is one hot-standby **boss** processor to control the system, if a processor fails, the **boss** \
+   In asymmetric multiprocessing, each processor has its own specific job, and there is one hot-standby **boss** processor to control the system, if a processor fails, the **boss**
    processor would replace it. In symmetric multiprocessing, each processor performs all tasks in the system and shares the data in memory. 
 
 4. Why is Dual-Mode operation required, and what is the example \
