@@ -50,3 +50,15 @@
    3. Module Kernel: The kernel has a set of core components and links via modules, it's more flexible and doesn't require message passing between modules.
   
 ## Chapter 3
+1. What is a PCB(Process Control block) (List 5 items that are maintained in a PCB and discuss the purpose of each item) 
+   1. Process State: States like running, waiting, ...
+   2. Program Counter: Indicate the next instruction of the program.
+   3. Process number: Process identifier, similar to Linux pid.
+   4. Register: Store the information of registers used.
+   5. Memory limit: Information about a process's memory boundary and space.
+   
+2. (1) What do long-term scheduler and short-term scheduler do \
+   (2) Provide at least two reasons why the medium-term scheduler might choose to swap a process. \
+   (1) The long-term scheduler selects the process to the ready queue, while the short-term scheduler assigns a process to the CPU from the ready queue. \
+   (2) If a process takes too much CPU time, the medium-term would swap out the process to release the CPU and the memory.
+   
