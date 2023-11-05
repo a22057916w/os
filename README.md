@@ -22,12 +22,22 @@
    A crash dump is a collection of files that record the status of the entire system when it experiences a system crash. It includes the info about the kernel, running programs,
    system memory, and hardware status...
 
-2. What are the types of system call (list at least 3) \
+2. What are the types of system calls (list at least 3) 
    1. File Management
    2. Device Management
    3. Communication
 
-3. What are the three general methods to pass parameters to OS \
+3. What are the three general methods to pass parameters to OS 
    1. Passed directly through the CPU registers.
    2. Push to the stack, and pop by the OS.
    3. Store in a memory block(a data structure), access through the pointer.
+
+4. What are the advantages and disadvantages of two-step boots \
+   Advantage: Allows multiple OS to exist, more flexible. \
+   Disadvantage: It's more complex and the boot-up time is slower.
+
+5. What are the advantages and disadvantages of Micro-Kernel \
+   Micro-kernel moves most kernel function to user space to minimize the kernel, therefore \
+      Advantage: More flexible, secure, and easy to extend. \
+      Disadvantage: More communication between kernel and user space.
+   
