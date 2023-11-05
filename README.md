@@ -80,3 +80,10 @@
       communication is typically asynchronous.
    3. Concurrency: Shared memory often requires more complex mechanisms to achieve concurrency due to the race condition, while message-passing is easier to implement.
 
+6. What is the difference between direct communication and indirect communication? \
+   For direct communication, processes receive and send messages directly to each other. For indirect communication, processes receive and send messages to a intermediate entity like 
+   mailbox, to communicate with each other.
+
+7. What is the difference between RPC and LPC? \
+   RPC typically involves communication between processes on remote systems, while LPC is typically used for communication between processes on the local system. RPC uses network protocol(
+   such as TCP/IP) to communicate with the remote system, while LPC utilizes local communication mechanisms like local sockets or shared memory.
