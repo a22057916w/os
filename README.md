@@ -40,3 +40,6 @@
    Micro-kernel moves most kernel functions to user space to minimize the kernel. Therefore it's more flexible, secure, and easy to extend, but more communication between kernel and user
    space.
    
+6. How does a computer boot up and start the OS \
+   One-Step: The power-up button signals the bootstrap program to load the OS to the memory and start up the OS. \
+   Two-Step: The power-up button signals the pointer to the bootstrap program, loads the bootstrap program to the memory, the bootstrap program loads the OS to the memory, starts up the OS.
