@@ -37,7 +37,6 @@
    Disadvantage: It's more complex and the boot-up time is slower.
 
 5. What are the advantages and disadvantages of Micro-Kernel \
-   Micro-kernel moves most kernel function to user space to minimize the kernel, therefore \
-      Advantage: More flexible, secure, and easy to extend. \
-      Disadvantage: More communication between kernel and user space.
+   Micro-kernel moves most kernel functions to user space to minimize the kernel. Therefore it's more flexible, secure, and easy to extend, but more communication between kernel and user
+   space.
    
