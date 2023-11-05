@@ -1,3 +1,3 @@
 # Chapter 1
-1. What is an Operating System
+1. What is an Operating System \
    An program act as imtermidiary between user and computer hardware. Also a resource allocator to handle the resoruce that user might use, such as memory, CPU time ...
