@@ -59,6 +59,7 @@
    
 2. (1) What do long-term scheduler and short-term scheduler do \
    (2) Provide at least two reasons why the medium-term scheduler might choose to swap a process. \
+   <br>
    (1) The long-term scheduler selects the process to the ready queue, while the short-term scheduler assigns a process to the CPU from the ready queue. \
    (2) If a process takes too much CPU time, the medium-term would swap out the process to release the CPU and the memory.
    
