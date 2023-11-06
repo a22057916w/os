@@ -163,7 +163,40 @@
 
 8. For Round-Robin scheduling, what problems can arise if the time quantum is too small or too large? If the context switch time is less than 1
    $\mu$ sec, what is a good time quantum range? \
-   If the time quantum goes too large, it acts like FCFS. If too small, it will cause heavy overhead of the context switch. Usually, while        context switch is in 10 $\mu$ sec$, the time quantum would fall in the range: \
+   If the time quantum goes too large, it acts like FCFS. If too small, it will cause heavy overhead of the context switch. Usually, while        the context switch is in 10 $\mu$ sec, the time quantum would fall in the range: \
                   $$10ms \leq q \leq 100ms$$  
    
+## Chapter 5-2
+1. What is the difference between AMP and SMP? \
+   Asymmetric Multiprocessing (AMP): Only one processor does the scheduling, and the other processors execute the code, like master-slave. \
+   Symmetric Multiprocessing (SMP): Each processor has its scheduling method and may share a common ready queue or have its own ready queue.
 
+2. Why is a simulator more accurate than deterministic modeling in algorithm evaluation? \
+   1. Simulators can emulate the dynamic behavior of a real system.
+   2. Simulators consider the influence of multiple factors.
+   3. Simulators precisely capture the system's state at different time
+      
+3. Distinguish PCS and SCS scheduling. \
+   Process-Contention Scope (PCS): Scheduling for user-thread to LWPs. \
+   System-Contention Scope (SCS): Scheduling for kernel thread to CPU. 
+
+4. Which parameters define the multilevel feedback queue scheduler? 
+   1. Number of queues.
+   2. Scheduling algorithm of each queue.
+   3. Method to decide when to move a process to a higher level.
+   4. Method to decide when to move a process to a lower level.
+   5. Method to decide in which queue the process should put when first entering the system.
+
+5. What is NUMA in the system? \
+   NUMA refers to Non-Uniform Memory Access. In such kind of architecture, different CPUs will have different memory access times due to    
+   different physical distance between memories and CPUs (If a CPU wants to access another CPU's memory).
+
+6. What are the advantages of NUMA? (list at least 3)\
+   1. Improve the memory access time by placing the memory physically close to the specific core.
+   2. Improve the multi-tasking performance since the CPU usually has to access the memory closet to it.
+   3. NUMA system can be easily scaled to more CPU cores and memories.
+
+7. What is the difference between Linux and Windows scheduling algorithms? \
+   Linux implements CFS by red-black tree, while Windows implements multi-class priority scheduling by multi-level feedback queue.
+   
+   
