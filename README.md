@@ -137,10 +137,11 @@
    To maximize the CPU utility, keep the CPU busy.
 
 3. When and Why does the OS perform CPU scheduling? \
-   when: \
-      1. Switch from the running state to the waiting or ready state. \
-      2. Switch from the waiting state to the ready state. \
-      3. Process termination. \
+   when: 
+      1. Switch from the running state to the waiting or ready state. 
+      2. Switch from the waiting state to the ready state. 
+      3. Process termination.
+   <br> 
    Why: \
       To allocate the limited resources to different processes efficiently, ensure fairness, and optimize.
 
@@ -151,7 +152,7 @@
    The time it takes for the dispatcher to stop one process and start another.
 
 6. What are the Scheduling Criteria?
-   1. CPU utilization: Ranging from $0%$ to $100%$, we want to keep the CPU as busy as possible.
+   1. CPU utilization: Ranging from 0% to 100%, we want to keep the CPU as busy as possible.
    2. Throughput: The number of processes that are completed in a time unit.
    3. Turnaround time: The amount of time to complete a process.
    4. Waiting time: The amount of time that a process spends waiting in the ready queue.
