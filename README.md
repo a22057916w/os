@@ -162,8 +162,8 @@
    might never be executed. The solution is to **aging** the lower-priority process, which gradually increases the process' priority as time      goes by.
 
 8. For Round-Robin scheduling, what problems can arise if the time quantum is too small or too large? If the context switch time is less than 1
-   $\mu$sec, what is a good time quantum range? \
+   $\mu$ sec, what is a good time quantum range? \
    If the time quantum goes too large, it acts like FCFS. If too small, it will cause heavy overhead of the context switch. Usually the time      quantum would fall in the range: \
-                  $$10ms \leq q \leq 100ms$$, while context switch is in $\mu$sec
+                  $10ms \leq q \leq 100ms$, while context switch is in $\mu$ sec
    
 
