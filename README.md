@@ -1,4 +1,4 @@
-![image](https://github.com/a22057916w/os/assets/25916767/3656c25f-92e4-47d0-b2a0-f6303563911e)## Chapter 1
+## Chapter 1
 1. What is an Operating System? \
    A program acts as an intermediary between the user and computer hardware, also a resource allocator to handle the resources that the user might use, such as memory, CPU time ...
 
