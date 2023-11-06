@@ -1,4 +1,4 @@
-## Chapter 1
+![image](https://github.com/a22057916w/os/assets/25916767/3656c25f-92e4-47d0-b2a0-f6303563911e)## Chapter 1
 1. What is an Operating System? \
    A program acts as an intermediary between the user and computer hardware, also a resource allocator to handle the resources that the user might use, such as memory, CPU time ...
 
@@ -81,9 +81,44 @@
    3. Concurrency: Shared memory often requires more complex mechanisms to achieve concurrency due to the race condition, while message-passing is easier to implement.
 
 6. What is the difference between direct communication and indirect communication? \
-   For direct communication, processes receive and send messages directly to each other. For indirect communication, processes receive and send messages to a intermediate entity like 
+   For direct communication, processes receive and send messages directly to each other. For indirect communication, processes receive and send messages to an intermediate entity like 
    mailbox, to communicate with each other.
 
 7. What is the difference between RPC and LPC? \
    RPC typically involves communication between processes on remote systems, while LPC is typically used for communication between processes on the local system. RPC uses network protocol(
    such as TCP/IP) to communicate with the remote system, while LPC utilizes local communication mechanisms like local sockets or shared memory.
+
+## Chapter 4
+1.	Explain what "Context Switching" means in multi-threaded programming? What is its role in a multi-threaded environment? \
+   It means the OS switches the threads, its stack, and registers, not the entire PCB. The role of a multi-threaded is to improve the efficiency of the context switch for reason 
+   aforementioned.
+
+2. What are the benefits of multithreading? \
+   Responsiveness: It allows the CPU to execute if a part of the process is blocked by switching threads. \
+   Resource Sharing: The threads can access the data by shared memory, better than message-passing. \
+   Economy: Cheaper than process creation, thread switching also has lower overhead. \
+   Scalability: Processes can take advantage of a multiprocess system.
+
+3. What is a thread in OS? \
+   The smallest unit that the CPU can execute.
+
+4. What is the thread pool? \
+   A number of threads in a pool that wait for the process to assign work.
+
+5. What are the advantages of using thread pools? (list at least 2) \
+   1. It's more efficient to assign work to an existing thread in a pool than creating a new thread.
+   2. The OS can limit the number of threads that a process can use to prevent a process from taking too many resources.
+
+6. In Windows threads, what are the primary data structures of a thread? Name three of them, specify in which space they reside, and describe their basic functions. \
+   ETHREAD (Executive Thread Block): It includes the pointer to a process, and indicates the belonging KTHREAD, which is in kernel space. \
+   KTHREAD (Kernel Thread Block): Scheduling and synchronizing info, kernel-mode stack, the pointer to TEB, which is in kernel space. \
+   TEB (Thread Environment Block): Thread id, user-mode stack, thread local storage, which is in user space.
+
+7. What is the difference between the user thread and kernel thread? \
+   The user thread is managed by user-level library, while the kernel thread is support by the kernel.
+
+8. How to handle the signal in OS? \
+   1. Deliver the signal to the appropriate thread.
+   2. Deliver the signal to every thread.
+   3. Deliver the signal to a certain thread.
+   4. Specify a thread to receive all signals.
