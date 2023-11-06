@@ -142,8 +142,7 @@
       2. Switch from the waiting state to the ready state. 
       3. Process termination.
    <br> 
-   Why: \
-      To allocate the limited resources to different processes efficiently, ensure fairness, and optimize.
+   Why: To allocate the limited resources to different processes efficiently, ensure fairness, and optimize.
 
 4. Describe about the Priority Scheduling. \
    Priority scheduling allocates the CPU time to the process with the highest priority to make sure the important task is executed first.
