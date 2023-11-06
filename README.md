@@ -137,7 +137,9 @@
    To maximize the CPU utility, keep the CPU busy.
 
 3. When and Why does the OS perform CPU scheduling? \
-   when: 1. Switch from the running state to the waiting or ready state.
-         2. Switch from the waiting state to the ready state.
-         3. Process termination.
+   when: 1. Switch from the running state to the waiting or ready state. \
+         2. Switch from the waiting state to the ready state. \
+         3. Process termination. \
    Why: To allocate the limited resources to different processes efficiently, ensure fairness, and optimize.
+
+4. Describe about the Priority Scheduling. \
