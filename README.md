@@ -105,7 +105,7 @@
 4. What is the thread pool? \
    A number of threads in a pool that wait for the process to assign work.
 
-5. What are the advantages of using thread pools? (list at least 2) \
+5. What are the advantages of using thread pools? (list at least 2) 
    1. It's more efficient to assign work to an existing thread in a pool than creating a new thread.
    2. The OS can limit the number of threads that a process can use to prevent a process from taking too many resources.
 
@@ -117,7 +117,7 @@
 7. What is the difference between the user thread and kernel thread? \
    The user thread is managed by user-level library, while the kernel thread is support by the kernel.
 
-8. How to handle the signal in OS? \
+8. How to handle the signal in OS? 
    1. Deliver the signal to the appropriate thread.
    2. Deliver the signal to every thread.
    3. Deliver the signal to a certain thread.
