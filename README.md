@@ -125,5 +125,5 @@
   
 ## Chapter 5-1
 1. The exponential averaging algorithm can help the scheduler estimate the next CPU burst time. Please explain in what context, the algorithm cannot estimate the next CPU burst time precisely. \
-  %% \tau %%
+$\tau$
 
