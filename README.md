@@ -171,7 +171,7 @@
    Asymmetric Multiprocessing (AMP): Only one processor does the scheduling, and the other processors execute the code, like master-slave. \
    Symmetric Multiprocessing (SMP): Each processor has its scheduling method and may share a common ready queue or have its own ready queue.
 
-2. Why is a simulator more accurate than deterministic modeling in algorithm evaluation? \
+2. Why is a simulator more accurate than deterministic modeling in algorithm evaluation? 
    1. Simulators can emulate the dynamic behavior of a real system.
    2. Simulators consider the influence of multiple factors.
    3. Simulators precisely capture the system's state at different time.
@@ -190,7 +190,7 @@
 5. What is NUMA in the system? \
    NUMA refers to Non-Uniform Memory Access. In such kind of architecture, different CPUs will have different memory access times due to different physical distance between memories and CPUs (If a CPU wants to access another CPU's memory).
 
-6. What are the advantages of NUMA? (list at least 3)\
+6. What are the advantages of NUMA? (list at least 3)
    1. Improve the memory access time by placing the memory physically close to the specific core.
    2. Improve the multi-tasking performance since the CPU usually has to access the memory closet to it.
    3. NUMA system can be easily scaled to more CPU cores and memories.
