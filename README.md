@@ -44,7 +44,7 @@
    One-Step: The power-up button signals the bootstrap program to load the OS to the memory and start up the OS. \
    Two-Step: The power-up button signals the pointer to the bootstrap program, loads the bootstrap program to the memory, the bootstrap program loads the OS to the memory, starts up the OS.
 
-7. There are various structural types an OS (list at least 3)
+7. There are various structural types in OS (list at least 3)
    1. Layered System: The OS is divided into many layers, the bottom is the hardware, and the highest is the user interface.
    2. MicroKernel: The system moves most of the kernel functions to the user space to minimize the kernel. And involves many message passing between kernel and user space.
    3. Module Kernel: The kernel has a set of core components and links via modules, it's more flexible and doesn't require message passing between modules.
