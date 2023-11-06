@@ -82,7 +82,7 @@
 
 6. What is the difference between direct communication and indirect communication? \
    For direct communication, processes receive and send messages directly to each other. For indirect communication, processes receive and send messages to an intermediate entity like 
-   mailbox, to communicate with each other.
+   a mailbox to communicate with each other.
 
 7. What is the difference between RPC and LPC? \
    RPC typically involves communication between processes on remote systems, while LPC is typically used for communication between processes on the local system. RPC uses network protocol(
