@@ -127,7 +127,7 @@
 1. The exponential averaging algorithm can help the scheduler estimate the next CPU burst time. Please explain in what context, the algorithm cannot estimate the next CPU burst time precisely. \
    The exponential averaging algorithm goes: \
                               $$\tau_{n+1} = \alpha t_n + (1-\alpha)\tau_n$$ \
-   Where $\tau_n+1$ is the next burst time predicted, $t_n$ is the previous actual burst time, and $\tau_n$ is the previous predicted burst 
+   Where $\tau_{n+1}$ is the next burst time predicted, $t_n$ is the previous actual burst time, and $\tau_n$ is the previous predicted burst 
    time. The parameter $\alpha$ control the weight of $t_n$ and $\tau_n$. \
    <br>
    As it depends on the actual burst time if the sequence of the burst time varies too much, the exponential average algorithm will lose it's 
