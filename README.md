@@ -130,16 +130,29 @@
    Where $\tau_{n+1}$ is the next burst time predicted, $t_n$ is the previous actual burst time, and $\tau_n$ is the previous predicted burst 
    time. The parameter $\alpha$ control the weight of $t_n$ and $\tau_n$. \
    <br>
-   As it depends on the actual burst time if the sequence of the burst time varies too much, the exponential average algorithm will lose it's 
+   As it depends on the actual burst time if the sequence of the burst time varies too much, the exponential average algorithm will lose its 
    precision.
 
 2. What is the purpose of CPU scheduling? \
    To maximize the CPU utility, keep the CPU busy.
 
 3. When and Why does the OS perform CPU scheduling? \
-   when: 1. Switch from the running state to the waiting or ready state. \
-         2. Switch from the waiting state to the ready state. \
-         3. Process termination. \
-   Why: To allocate the limited resources to different processes efficiently, ensure fairness, and optimize.
+   when: \
+      1. Switch from the running state to the waiting or ready state. \
+      2. Switch from the waiting state to the ready state. \
+      3. Process termination. \
+   Why: \
+      To allocate the limited resources to different processes efficiently, ensure fairness, and optimize.
 
 4. Describe about the Priority Scheduling. \
+   Priority scheduling allocates the CPU time to the process with the highest priority to make sure the important task is executed first.
+
+5. What is the Dispatch Latency? \
+   The time it takes for the dispatcher to stop one process and start another.
+
+6. What are the Scheduling Criteria?
+   1. CPU utilization: Ranging from $0%$ to $100%$, we want to keep the CPU as busy as possible.
+   2. Throughput: The number of processes that are completed in a time unit.
+   3. Turnaround time: The amount of time to complete a process.
+   4. Waiting time: The amount of time that a process spends waiting in the ready queue.
+   5. Response time: The time between the first response and request.
