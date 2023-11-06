@@ -188,8 +188,7 @@
    5. Method to decide in which queue the process should put when first entering the system.
 
 5. What is NUMA in the system? \
-   NUMA refers to Non-Uniform Memory Access. In such kind of architecture, different CPUs will have different memory access times due to   
-   different physical distance between memories and CPUs (If a CPU wants to access another CPU's memory).
+   NUMA refers to Non-Uniform Memory Access. In such kind of architecture, different CPUs will have different memory access times due to different physical distance between memories and CPUs (If a CPU wants to access another CPU's memory).
 
 6. What are the advantages of NUMA? (list at least 3)\
    1. Improve the memory access time by placing the memory physically close to the specific core.
