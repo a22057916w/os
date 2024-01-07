@@ -212,7 +212,8 @@
    
 4. How to solve the critical section problem? \
    We can solve the critical section problem by satisfying the three requirements. \
-   1.  
-   2. 
+      1. Mutual Exclusion  
+      2. Progress
+      3. Bounded Waiting
 7. 
    
