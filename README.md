@@ -242,4 +242,9 @@
    2. *Starvation* : it could lead to starvation for a process that keeps waiting infinitely, such as LIFO.
    3. *Race Condition* : if the correct order of wait() and signal() is not maintained, the processes might go into a race condition.
 
-5.
+5. What's the difference between the First and Second Readers-Writers Problems? Which character will suffer from starvation in the two problems? \
+   1. *First Problem* : readers don't need to wait for each other, readers wait only when a writer is writing.
+   2. *Seconde Problem* : Once a writer is waiting, no new readers can start reading.
+   Therefore, the writers would starve in first problem; readers would strave in second problem.
+
+6. 
