@@ -210,5 +210,9 @@
    For the mechanism with no Busy Waiting, the block() operation puts the process into the waiting queue while there is no semaphore to acquire. The wakeup() operation moves the process from the waiting queue to the ready queue while there is 
    an available semaphore.
    
-4. 
+4. How to solve the critical section problem? \
+   We can solve the critical section problem by satisfying the three requirements. \
+   1.  
+   2. 
+7. 
    
