@@ -242,9 +242,17 @@
    2. *Starvation* : it could lead to starvation for a process that keeps waiting infinitely, such as LIFO.
    3. *Race Condition* : if the correct order of wait() and signal() is not maintained, the processes might go into a race condition.
 
-5. What's the difference between the First and Second Readers-Writers Problems? Which character will suffer from starvation in the two problems? \
+5. What's the difference between the First and Second Readers-Writers Problems? Which character will suffer from starvation in the two problems? 
    1. *First Problem* : readers don't need to wait for each other, readers wait only when a writer is writing.
-   2. *Seconde Problem* : Once a writer is waiting, no new readers can start reading. <br>
-   Therefore, the writers would starve in first problem; readers would strave in second problem.
+   2. *Seconde Problem* : Once a writer is waiting, no new readers can start reading. \
+   Therefore, the writers would starve in the first problem; readers would starve in the second problem.
 
-6. 
+6.  What is a monitor?
+   It is a high-level code structure includes shared data and procedure that use condition variables to keep only one process using shared data at the same time.
+
+7. Describe the 3 solutions for the Dining-Philosophers Problem.
+   1. Allow at most n-1 philosophers to be sitting simultaneously at the table.
+   2. Allow a philosopher to pick chopsticks only if both chopsticks are available.
+   3. Make odd-number philosophers pick the left chopstick first and then pick the right chopstick, while even-number philosophers pick the chopsticks in the reversed order.
+      
+## Chapter 7
