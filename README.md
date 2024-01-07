@@ -212,8 +212,8 @@
    
 4. How to solve the critical section problem? \
    We can solve the critical section problem by satisfying the three requirements. \
-      1. Mutual Exclusion: only one process can be executed in the critical section.
-      2. Progress: only those processes that are not executed in the remainder section can determine which process can enter the critical section.
-      3. Bounded Waiting: a process must not suffer starvation from waiting to enter the critical section. 
+      1. *Mutual Exclusion*: only one process can be executed in the critical section.
+      2. *Progress*: only those processes that are not in the remainder section can decide which process can enter the critical section.
+      3. *Bounded Waiting*: a process must not suffer starvation from waiting to enter the critical section. 
 7. 
    
