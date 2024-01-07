@@ -275,4 +275,7 @@
 4. We have Deadlock Avoidance methods to help the system avoid deadlock, such as a Resource Allocation Graph and Banker's Algorithm. Why do our computers still suffer from deadlock? \
    Two methods rely on a fixed number of resources and processes. If processes become more and more, resources are still the same. The new processes may break the balance while requesting the resources. 
 
-5. 
+5. What's the difference between Deadlock Avoidance and Deadlock Detection? \
+   Deadlock Avoidance sometimes rearranges the resource requests sequence to make sure the system is in a safe state. Deadlock Detection doesn't interfere with the resource request sequence and thus, it only checks if the resource request       sequence is safe for the system.
+   
+## Chapter 8-1 
