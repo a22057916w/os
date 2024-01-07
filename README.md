@@ -196,5 +196,19 @@
 
 7. What is the difference between Linux and Windows scheduling algorithms? \
    Linux implements CFS by red-black tree, while Windows implements multi-class priority scheduling by multi-level feedback queue.
+
+## Chapter 6-1
+1. What is the Producer and Consumer problem? \
+   Producer is a process, which can produce data/items to a queue for the consumer to fetch. \
+   Consumer is a process that can fetch data/items from the Producer through a queue.
+    
+2. Explain the concept of Race Condition. \
+   A situation where several processes access and manipulate the same data concurrently and the outcome of the execution depends on the order in which the access takes place.
    
+3. Describe Semaphore implementation and what are the two operations used in Semaphore implementation with no Busy Waiting. \
+   Semaphore uses wait() and signal() to check if there is an available semaphore. wait() is to acquire the semaphore and signal() is to release the semaphore. \
+   For the mechanism with no Busy Waiting, the block() operation puts the process into the waiting queue while there is no semaphore to acquire. The wakeup() operation moves the process from the waiting queue to the ready queue while there is 
+   an available semaphore.
+   
+4. 
    
