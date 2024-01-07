@@ -217,7 +217,7 @@
       3. *Bounded Waiting*: a process must not suffer starvation from waiting to enter the critical section. 
 
 5. What is Synchronization Hardware, and what is its role in a multi-processor system? \
-   Synchronization Hardware is hardware that can perform atomic instruction, where atomic means it can not be interrupted even in a multi-processor system. So if there is another process in another process try to execute atomic instruction, it will be blocked by the hardware.
+   Synchronization Hardware is hardware that can perform atomic instruction, where atomic means it can not be interrupted even in a multi-processor system. So if there is another process in another process try to execute atomic instruction, it    will be blocked by the hardware.
    
 6.  
 
