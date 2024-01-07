@@ -228,14 +228,18 @@
 
 ## Chapter 6-2
 1. What is Priority Inversion? and explain the priority-inheritance protocol how to solve it. \
-   A lower-priority process holds the resource that is also required by a higher-priority process and thus, the higher-priority must wait for the lower-priority process to finish. If the lower-priority process can be preempted by other lower-     priority processes, the higher-priority process needs to wait longer. To solve this problem, the priority-inheritance protocol lets the lower-priority process inherit the higher-priority until it finishes, and then revert. In this way, the     inherited process can not be preempted in the case mentioned before.
+   A lower-priority process holds the resource that is also required by a higher-priority process and thus, the higher-priority must wait for the lower-priority process to finish. If the lower-priority process can be preempted by other lower-priority processes, the higher-priority process needs to wait longer. To solve this problem, the priority-inheritance protocol lets the lower-priority process inherit the higher-priority until it finishes, and then revert. In this way, the     inherited process can not be preempted in the case mentioned before.
     
 2. What is the Bounded-Buffer Problem, and how is it addressed using semaphores? \
-   In the problem, the produces and consumers share the following data structures: \
+   In the problem, the produces and consumers share the following data structures:
       1. *int n* : declare there are n buffers.
       2. *semaphore mutex = 1* : make sure only one producer or consumer can access the buffer.
       3. *semaphore empty = n* : update the empty buffer size by protection of semaphore.
       4. *semaphore full = 0* : update the full buffer size by protection semaphore.
 
-4. What problem can occur if semaphores are used incorrectly? Please list three problems.
+4. What problem can occur if semaphores are used incorrectly? Please list three problems. \
+   1. *Deadlock* : if two processes are both waiting for the resources that are held by each other respectively, the situation will go into deadlock.
+   2. *Starvation* : it could lead to starvation for a process that keeps waiting infinitely, such as LIFO.
+   3. *Race Condition* : if the correct order of wait() and signal() is not maintained, the processes might go into a race condition.
 
+5.
