@@ -212,14 +212,14 @@
    
 4. How to solve the critical section problem? \
    We can solve the critical section problem by satisfying the three requirements.
-      1. *Mutual Exclusion*: only one process can be executed in the critical section.
-      2. *Progress*: only those processes that are not in the remainder section can decide which process can enter the critical section.
-      3. *Bounded Waiting*: a process must not suffer starvation from waiting to enter the critical section. 
+      1. *Mutual Exclusion* : only one process can be executed in the critical section.
+      2. *Progress* : only those processes that are not in the remainder section can decide which process can enter the critical section.
+      3. *Bounded Waiting* : a process must not suffer starvation from waiting to enter the critical section. 
 
 5. What is Synchronization Hardware, and what is its role in a multi-processor system? \
    Synchronization Hardware is hardware that can perform atomic instruction, where atomic means it can not be interrupted even in a multi-processor system. So if there is another process in another process that tries to execute atomic instruction, it will be blocked by the hardware.
    
-6. In Semaphore, Why using the while loop in wait() is not a good method?
+6. In Semaphore, Why using the while loop in wait() is not a good method? \
    It may incur Busy Waiting that wastes the CPU cycles.
    
 7. Explain how the test_and_set() function works in the context of process synchronization. \
@@ -231,6 +231,10 @@
    A lower-priority process holds the resource that is also required by a higher-priority process and thus, the higher-priority must wait for the lower-priority process to finish. If the lower-priority process can be preempted by other lower-     priority processes, the higher-priority process needs to wait longer. To solve this problem, the priority-inheritance protocol lets the lower-priority process inherit the higher-priority until it finishes, and then revert. In this way, the     inherited process can not be preempted in the case mentioned before.
     
 2. What is the Bounded-Buffer Problem, and how is it addressed using semaphores? \
-   
-3. 
+   In the problem, the produces and consumers share the following data structures:
+      1. *int n;* :
+      2. *semaphore mutex = 1;* :
+      3. *semaphore empty = n;* :
+      4. *semaphore full - 0;* : 
+4. 
 
