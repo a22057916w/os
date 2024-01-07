@@ -247,7 +247,7 @@
    2. *Seconde Problem* : Once a writer is waiting, no new readers can start reading. \
    Therefore, the writers would starve in the first problem; readers would starve in the second problem.
 
-6.  What is a monitor?
+6.  What is a monitor? \
    It is a high-level code structure includes shared data and procedure that use condition variables to keep only one process using shared data at the same time.
 
 7. Describe the 3 solutions for the Dining-Philosophers Problem.
@@ -257,8 +257,22 @@
       
 ## Chapter 7
 1. Please list the four conditions that must be satisfied to form a deadlock.
-   1. *Mutual Exculsion* :
-   2. *Hold and Wait* :
-   3. *No Preemption* :
-   4. *Circular Wait* :
-2. 
+   1. *Mutual Exclusion* : only one process at a time can use a resource.
+   2. *Hold and Wait* : a process that holds at least one resource, is waiting for additional resources that are held by other processes.
+   3. *No Preemption* : a resource can't be preempted, that is the resource can be released only voluntarily by the process.
+   4. *Circular Wait* : the waiting process must form a loop, which means all processes are waiting for each other.
+
+2. What are the methods for handling Deadlocks? 
+   1. *Deadlock Prevention* : break one of the four criteria of Deadlock.
+   2. *Deadlock Avoidance* : RAG, banker's algorithm.
+   3. *Deadlock Detection* : RAG, banker's algoritm.
+   4. *Recovery from Deadlock* : select a victim(process) to release the resources and rollback(return to safe state).
+      
+3. Explain at least one advantage and one disadvantage of the Banker's Algorithm.
+   * *Advantage* : avoid deadlock in resource allocation by ensuring a safe sequence of resource requests.
+   * *Disadvantage* : only works with a fixed number of resources and processes.
+
+4. We have Deadlock Avoidance methods to help the system avoid deadlock, such as a Resource Allocation Graph and Banker's Algorithm. Why do our computers still suffer from deadlock? \
+   Two methods rely on a fixed number of resources and processes. If processes become more and more, resources are still the same. The new processes may break the balance while requesting the resources. 
+
+5. 
