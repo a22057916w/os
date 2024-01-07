@@ -237,7 +237,7 @@
       3. *semaphore empty = n* : update the empty buffer size by protection of semaphore.
       4. *semaphore full = 0* : update the full buffer size by protection semaphore.
 
-4. What problem can occur if semaphores are used incorrectly? Please list three problems. \
+4. What problem can occur if semaphores are used incorrectly? Please list three problems. 
    1. *Deadlock* : if two processes are both waiting for the resources that are held by each other respectively, the situation will go into deadlock.
    2. *Starvation* : it could lead to starvation for a process that keeps waiting infinitely, such as LIFO.
    3. *Race Condition* : if the correct order of wait() and signal() is not maintained, the processes might go into a race condition.
@@ -256,3 +256,9 @@
    3. Make odd-number philosophers pick the left chopstick first and then pick the right chopstick, while even-number philosophers pick the chopsticks in the reversed order.
       
 ## Chapter 7
+1. Please list the four conditions that must be satisfied to form a deadlock.
+   1. *Mutual Exculsion* :
+   2. *Hold and Wait* :
+   3. *No Preemption* :
+   4. *Circular Wait* :
+2. 
