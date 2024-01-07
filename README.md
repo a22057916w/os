@@ -205,8 +205,8 @@
 2. Explain the concept of Race Condition. \
    A situation where several processes access and manipulate the same data concurrently and the outcome of the execution depends on the order in which the access takes place.
    
-3. Describe Semaphore implementation and what are the two operations used in Semaphore implementation with no Busy Waiting. \
-   Semaphore uses wait() and signal() to check if there is an available semaphore. wait() is to acquire the semaphore and signal() is to release the semaphore. \
+3. Describe Semaphore implementation, and what are the two operations used in Semaphore implementation with no Busy Waiting. \
+   Semaphore uses wait() and signal() to check for an available semaphore. wait() is to acquire the semaphore and signal() is to release the semaphore. \
    For the mechanism with no Busy Waiting, the block() operation puts the process into the waiting queue while there is no semaphore to acquire. The wakeup() operation moves the process from the waiting queue to the ready queue while there is 
    an available semaphore.
    
@@ -217,7 +217,20 @@
       3. *Bounded Waiting*: a process must not suffer starvation from waiting to enter the critical section. 
 
 5. What is Synchronization Hardware, and what is its role in a multi-processor system? \
-   Synchronization Hardware is hardware that can perform atomic instruction, where atomic means it can not be interrupted even in a multi-processor system. So if there is another process in another process try to execute atomic instruction, it    will be blocked by the hardware.
+   Synchronization Hardware is hardware that can perform atomic instruction, where atomic means it can not be interrupted even in a multi-processor system. So if there is another process in another process that tries to execute atomic instruction, it will be blocked by the hardware.
    
-6.  
+6. In Semaphore, Why using the while loop in wait() is not a good method?
+   It may incur Busy Waiting that wastes the CPU cycles.
+   
+7. Explain how the test_and_set() function works in the context of process synchronization. \
+   It reads and sets a shared variable, such as LOCK, that cannot be interrupted. If a process wants to enter the critical section, it executes test_and_set() to acquire the lock and prevent other processes from entering the critical section by
+   holding the lock.
+
+## Chapter 6-2
+1. What is Priority Inversion? and explain the priority-inheritance protocol how to solve it. \
+   A lower-priority process holds the resource that is also required by a higher-priority process and thus, the higher-priority must wait for the lower-priority process to finish. If the lower-priority process can be preempted by other lower-     priority processes, the higher-priority process needs to wait longer. To solve this problem, the priority-inheritance protocol lets the lower-priority process inherit the higher-priority until it finishes, and then revert. In this way, the     inherited process can not be preempted in the case mentioned before.
+    
+2. What is the Bounded-Buffer Problem, and how is it addressed using semaphores? \
+   
+3. 
 
