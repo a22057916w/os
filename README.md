@@ -203,7 +203,7 @@
    Consumer is a process that can fetch data/items from the Producer through a queue.
     
 2. Explain the concept of Race Condition. \
-   A situation where several processes access and manipulate the same data concurrently and the outcome of the execution depends on the order in which the access takes place.
+   A situation where several processes access and manipulate the same data concurrently, and the outcome of the execution depends on the order in which the access takes place.
    
 3. Describe Semaphore implementation, and what are the two operations used in Semaphore implementation with no Busy Waiting. \
    Semaphore uses wait() and signal() to check for an available semaphore. wait() is to acquire the semaphore and signal() is to release the semaphore. \
