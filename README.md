@@ -337,4 +337,28 @@
    3. The entry of the page table typically stores the frame number while the entry of the segment table stores the segment base and segment limit.
       
 ## Chapter 9-1
-1.
+1. What are the open-file table and system-wide table? 
+   * *open-file table* : usually refers to the per-process table that tracks the files opened by a process, using the current file pointer to find the file.
+   * *system-wide table* : maintains all information of the opened files that, each entry is pointed to by the pre-process tables' entry.
+
+2. What are the three access methods in a file system?
+   1. *Sequential Access* : can only read or write on the next block of the file, if one wants to read the previous block, he or she needs to rewind to the beginning of the file.
+   2. *Direct Access* : support random access with a mechanism similar to the "array" data structure.
+   3. *Index Access* : the system maintains an index table, we first find the target index and the corresponding pointer, which points to the block containing the desired record.
+      
+3. What is the purpose of file system mounting? \
+   It is a process that the OS makes file-system on a device available for users or itself, that can access through the system's directory tree.
+
+4. Describe about Directory Structure and its operations. \
+   A directory structure is a collection of nodes containing information about files, which provide operations:
+   * *Search a file*
+   * *Create a file*
+   * *Delete a file*
+   * *Rename a file*
+   * *List the directory*
+   * *Traverse the file system*
+     
+5. Please introduce the concept of a "Two-level directory" structure. \
+   The system maintains a level that stores user names and assigns the second level directory for each user to store their files.
+   
+## Chapter 9-2
