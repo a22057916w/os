@@ -336,4 +336,5 @@
    2. Paging has internal fragmentation, no external fragmentation, while Segmentation has the other way around.
    3. The entry of the page table typically stores the frame number while the entry of the segment table stores the segment base and segment limit.
       
-
+## Chapter 9-1
+1.
