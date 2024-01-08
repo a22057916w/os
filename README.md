@@ -306,7 +306,22 @@
    It is the base register that records the starting address of a process.
    
 8. Explain the role of "Paging" in memory management. \
-   Split the physical and logical memory into a fixed-size frame and page respectively, both are the same size. This mechanism allows allocating a process non-contiguously and fixes the extranl fragmentation.
+   Split the physical and logical memory into a fixed-size frame and page respectively, both are the same size. This mechanism allows allocating a process non-contiguously and resolves the external fragmentation.
 
 ## Chapter 8-2
-1.
+1. What is the difference between page-table register (PTBR) and page-table length register (PTLR)?
+   * *PTBR* : indicates the starting address of a page table.
+   * *PTLR* : indicates the size of a page table.
+     
+2. Why do we need a Transition Look-aside Buffer (TLB)? \
+   Because it takes two times to access memory while using the paging mechanism. TLB, which is a cache, stores some page-table entries to reduce one memory access.
+   
+3. What is a shared code? \
+   A shared code is usually a reentrant code, which means it won't be affected by interruption. Therefore it can be shared by multiple processes.
+   
+4. What is the Hierarchical Paging, Hashed Page Table, and Inverted Page Table?
+   * *Hierarchical Paging* : divide a large page table into smaller ones, and use a page table to record all the page tables. This is an example of two-level hierarchical paging.
+   * *Hashed Page Table* : maintain the page table as a hash table. if there is a conflict or collision, use the linked-list to handle it. Thus, an entry contains a page number, a frame number, and a pointer to the next entry.
+   * *Inverted Page Table* : maintain only one page table, each page is a real physical frame. Each table entry contains a process-id and a page number (which is a frame number).
+
+5. 
