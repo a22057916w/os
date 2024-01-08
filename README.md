@@ -278,4 +278,15 @@
 5. What's the difference between Deadlock Avoidance and Deadlock Detection? \
    Deadlock Avoidance sometimes rearranges the resource requests sequence to make sure the system is in a safe state. Deadlock Detection doesn't interfere with the resource request sequence and thus, it only checks if the resource request       sequence is safe or not for the system.
    
-## Chapter 8-1 
+## Chapter 8-1
+1. When do we bind the address of a process?
+   1. *Compile Time* : when you know the exact location in the memory that the process will reside in at compile time.
+   2. *Load Time* : if we don't know where the process will reside in memory at compile time, we generate the relocatable code(object code) and delay the binding to the load time.
+   3. *Execition Time* : if a process can be moved in memory during execution, we bind it on the run time. This method requires MMU and registers to support it.
+      
+2. What could happen if someone other than the system could alter the address of the base and limit registers? \
+   If one of the registers is modified by others, one process may access another process's memory segmentation and thus, incur errors.
+   
+3. List at least two differences between Logical Address and Physical Address.
+
+4.   
