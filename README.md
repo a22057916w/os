@@ -326,10 +326,14 @@
 
 5. What is segmentation and its architecture? \
    Segmentation allows the system to allocate various-size memory space to a process. The system maintains a segment table that each entry contains a segment base and segment limit. The segment base indicates the starting address of a segment; the segment limit indicates the size of a segment.
+
+6. Describe an advantage of Segmentation. \
+   Let's say we have a for loop in the program, if we allocate this piece of code by paging it might constantly jump between frames. If we use segmentation the piece of code will stay in the same region of memory and thus, eliminate the jumping problem.
    
-6. What are the differences between paging and segmentation? please list three.
+
+7. What are the differences between paging and segmentation? please list three.
    1. Paging divides memory into fixed-size frames while Segmentation can have various-size memory blocks.
    2. Paging has internal fragmentation, no external fragmentation, while Segmentation has the other way around.
    3. The entry of the page table typically stores the frame number while the entry of the segment table stores the segment base and segment limit.
       
-7. 
+
