@@ -386,4 +386,3 @@
    2. Go to the corresponding entry in the system-wide open-file table.
    3. Retrieve the desired data blocks.
    
-5. 
