@@ -374,12 +374,12 @@
    3. *system-wide open-file table* : contains a copy of the FCB of each open file.
    4. *per-process open-file table* : a table that records the files open by a process, each entry is a pointer to a system-wide open-file table entry.
       
-4. Please list the file open and read flow:
+4. Please list the file open and read flow: \
    File open:
    1. Search the memory for the desired directory structure.
    2. If we do not find the information we seek, load more data of the desired directory structure into memory.
    3. Fetch the desired FCE found in the directory structure.
-   4. Once an FCB is found, it will be copied to the system-wide open-file table.
+   4. Once an FCB is found, it will be copied to the system-wide open-file table. \
    File read:
    1. Search the per-process open-file table to find the reference entry in the system-wide open-file table.
    2. Go to the corresponding entry in the system-wide open-file table.
