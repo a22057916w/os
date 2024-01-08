@@ -299,4 +299,14 @@
    * *Base Register* : to record the starting address of a process.
    * *Limit Register* : to specify the available memory space that a process can use.
       
-6. 
+6. What is Backing Store in Swapping? \
+   A space that can temporarily store the process that is swapped in, for example, a space is the disk.
+   
+7. What is the relocation register in MMU? \
+   It is the base register that records the starting address of a process.
+   
+8. Explain the role of "Paging" in memory management. \
+   Split the physical and logical memory into a fixed-size frame and page respectively, both are the same size. This mechanism allows allocating a process non-contiguously and fixes the extranl fragmentation.
+
+## Chapter 8-2
+1.
