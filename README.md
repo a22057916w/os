@@ -347,7 +347,7 @@
    3. *Index Access* : the system maintains an index table, we first find the target index and the corresponding pointer, which points to the block containing the desired record.
       
 3. What is the purpose of file system mounting? \
-   It is a process that the OS makes file-system on a device available for users or itself, that can access through the system's directory tree.
+   It is a process that the OS makes file-system on a device available for users or itself, letting it be able to access through the system's directory tree.
 
 4. Describe about Directory Structure and its operations. \
    A directory structure is a collection of nodes containing information about files, which provide operations:
@@ -362,3 +362,27 @@
    The system maintains a level that stores user names and assigns the second level directory for each user to store their files.
    
 ## Chapter 9-2
+1. What is a File Structure? \
+   It is a logical storage unit, a collection of related information recorded on the secondary storage such as owner, size, and location.
+   
+2. What information is in the file control block (FCB)? \
+   An FCB normally contains the file's ownership, permission, size, date, location, and pointers to other FCBs.
+   
+3. Please list four types of structures that may be included in the in-memory structure of a file system implementation.
+   1. *in-memory mount table* : contains information about each mounted partition.
+   2. *in-memory directory structure cache* : holds the information of recently accessed directories.
+   3. *system-wide open-file table* : contains a copy of the FCB of each open file.
+   4. *per-process open-file table* : a table that records the files open by a process, each entry is a pointer to a system-wide open-file table entry.
+      
+4. Please list the file open and read flow:
+   File open:
+   1. Search the memory for the desired directory structure.
+   2. If we do not find the information we seek, load more data of the desired directory structure into memory.
+   3. Fetch the desired FCE found in the directory structure.
+   4. Once an FCB is found, it will be copied to the system-wide open-file table.
+   File read:
+   1. Search the per-process open-file table to find the reference entry in the system-wide open-file table.
+   2. Go to the corresponding entry in the system-wide open-file table.
+   3. Retrieve the desired data blocks.
+   
+5. 
