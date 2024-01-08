@@ -324,4 +324,12 @@
    * *Hashed Page Table* : maintain the page table as a hash table. if there is a conflict or collision, use the linked-list to handle it. Thus, an entry contains a page number, a frame number, and a pointer to the next entry.
    * *Inverted Page Table* : maintain only one page table, each page is a real physical frame. Each table entry contains a process-id and a page number (which is a frame number).
 
-5. 
+5. What is segmentation and its architecture? \
+   Segmentation allows the system to allocate various-size memory space to a process. The system maintains a segment table that each entry contains a segment base and segment limit. The segment base indicates the starting address of a segment; the segment limit indicates the size of a segment.
+   
+6. What are the differences between paging and segmentation? please list three.
+   1. Paging divides memory into fixed-size frames while Segmentation can have various-size memory blocks.
+   2. Paging has internal fragmentation, no external fragmentation, while Segmentation has the other way around.
+   3. The entry of the page table typically stores the frame number while the entry of the segment table stores the segment base and segment limit.
+      
+7. 
