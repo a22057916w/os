@@ -385,4 +385,9 @@
    1. Search the per-process open-file table to find the reference entry in the system-wide open-file table.
    2. Go to the corresponding entry in the system-wide open-file table.
    3. Retrieve the desired data blocks.
-   
+
+5. What are the pros and cons of the contiguous, linked, indexed allocation?
+   * *Contiguous Allocation* : each file occupies a set of contiguous blocks and thus, has higher performance on random access. However, files cannot grow once allocated and may lead to external fragmentation.
+   * *Linked Allocation* : each file occupies blocks by linked-list where each block has a pointer to the next block thus, resolving the external fragmentation. However, it cannot support random access, and also wastes block space by storing a pointer.
+   * *Indexed Allocation* : each file has its index block(s) of pointers to the data block, therefore, supporting a certain degree of random access. However, if there are too many data blocks, the file needs more index blocks, and thus, occupies more space.
+     <br>
